@@ -1,0 +1,185 @@
+<div class="container">
+  <div class="inner">
+    <h1></h1>
+  </div>
+</div>
+<style type="text/css">
+  .scrollable {
+    /* animation:floating 8s infinite;
+    transform:rotateY(350deg); */
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 20px;
+    background: white;
+    /* -webkit-transform: rotateY(350deg);
+    transform: rotateY(350deg); */
+    -webkit-animation: floating 2s infinite;
+    animation: floating 2s infinite;
+    /* -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease-in-out; */
+  }
+
+  .card {
+    /* position:relative; */
+    position: relative;
+    height: 300px;
+    width: 260px;
+    left: 200px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 20px;
+    background: white;
+    /* -webkit-transform: rotateY(350deg); */
+    /* transform: rotateY(350deg); */
+    /* -webkit-animation: floating 2s infinite; */
+    /* animation: floating 2s infinite; */
+    /* z-index:100; */
+  }
+
+  .rotate-test {
+    transform: rotate(60deg);
+    width: 80px;
+    height: 60px;
+    background-color: rgba(200, 8, 8, 0.5);
+  }
+
+  .bpm-test-container button {
+    transform: rotate(30deg);
+    transition: all 2s ease-in-out;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0px) rotateY(0deg)
+    }
+
+    50% {
+      transform: translateY(80px) rotateY(0deg)
+    }
+
+    100% {
+      transform: translateY(0px) rotateY(0deg)
+    }
+  }
+
+  body {
+    background-color: #fff;
+  }
+
+  .clip-background {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: #09a;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    top: 10px;
+
+  }
+
+  .img-for-mask {
+    mask-image: url(/images/mask-test.png);
+    mask-size: 100px;
+
+    -webkit-mask-image: url(/images/mask-test.png);
+    -webkit-mask-size: 100%;
+    width: 50vw;
+  }
+
+  .discribe {
+    z-index: 1000;
+    position: relative;
+    background-color: #a04;
+    height: 80px;
+  }
+
+  .scroll-item::before {
+    content: "before_test_";
+    color: green;
+  }
+
+  .scroll-item::after {
+    content: "_after_test";
+  }
+
+  .aa {
+    background-image: url("https://static.biligame.com/deadcells/gw/pc/images/right-nav/nav-news.png?4d900a6d");
+  }
+</style>
+<form>
+  <div>
+    <p>name</p>
+    <div>
+      <label for="input1">aaaa</label>
+      <input id="input1" required="required" name="name" type="radio">
+    </div>
+    <div>
+      <label for="input2">bbbb</label>
+      <input id="input2" name="name" type="radio">
+    </div>
+  </div>
+  <input type="submit">
+</form>
+
+<%= react_component("Tools/TestPhotoTransform")%>
+<%= react_component("Tools/BpmTest")%>
+<%= react_component("Home/Header")%>
+<%# <div class="modal-wrapper">
+</div> %>
+<div class="discribe">
+  <dl class="row">
+    <dt class="col-sm-3 p">描述列表</dt>
+    <dd class="col-sm-9">一个关于描述列表的两端对齐</dd>
+  </dl>
+</div>
+
+<div class="clip-background">
+  <div class="card">
+    <div class="scrollable">
+      <div class="scroll-item">text1</div>
+      <div class="scroll-item">text2</div>
+      <div class="scroll-item">text3</div>
+      <div class="scroll-item">text4</div>
+      <div class="scroll-item">text5</div>
+    </div>
+  </div>
+</div>
+<img class="img-for-mask" src="/images/restaurant1.jpg" />
+
+
+<option value="">choose</option>
+<option value="1">lorem</option>
+<div class="rotate-test">rotate</div>
+
+
+<div style="position:relative;height:30px">
+  <div style="position:absolute">
+    1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  </div>
+</div>
+
+<div class="clip">11</div>
+
+<div class="target-test">
+  <a href="#target-text">to target text</a>
+</div>
+<p id="target-text">background will turn yellow</p>
+
+<div class="tools-container">
+  <div class="tools-inner-container">
+    <div class="red-box animate__animated animate__zoomInUp"></div>
+  </div>
+</div>
+
+<nav>
+  <h1>h1</h1>
+  <ul>
+    <li>li1</li>
+    <li>li2</li>
+  </ul>
+</nav>

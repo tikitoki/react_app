@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/app/assets/stylesheets/index.scss">
+    <style>
+        body {
+            background-color: rgb(80, 191, 219);
+            justify-items: center;
+            align-items: center;
+            display: grid;
+            height: 100vh;
+        }
+
+        /* .container {
+            height: 30%;
+            width: 30vw;
+            background-color: azure;
+        } */
+
+        .container .inner {
+            background-color: #0d5ddd;
+            padding: 1em;
+            border-radius: 10px;
+            width: 100%;
+            -webkit-clip-path: circle(20% at 0 0);
+            clip-path: circle(20% at 0 0);
+            -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
+            transition: -webkit-clip-path 0.5s ease-in-out;
+            transition: clip-path 0.5s ease-in-out;
+            transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+            color: white;
+        }
+
+        .container:hover .inner {
+            -webkit-clip-path: circle(70%);
+            clip-path: circle(70%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae quos, earum, amet placeat magnam
+                voluptates incidunt commodi veritatis porro explicabo in rem repellendus labore cumque maiores
+                dignissimos assumenda. Dolorum!</p>
+        </div>
+    </div>
+</body>
+
+</html>

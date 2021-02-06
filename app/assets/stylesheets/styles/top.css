@@ -1,0 +1,107 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+.main {
+  width: 1600px;
+  margin: 50px auto;
+  background-color: #f0f8fa;
+}
+
+.shop_detail img {
+  height: 100px;
+  width: 100px;
+}
+
+.main-container {
+  background-image: url("/../images/restaurant1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.shop_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop_detail img {
+  margin: auto;
+  height: 130px;
+  width: 130px;
+}
+
+.shops {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aa {
+  height: 100px;
+  width: 100px;
+}
+
+/* .btn1{
+    display:flex;
+    float:right;
+    margin:0 0 0 auto;
+} */
+.comment {
+  width: 800px;
+}
+
+.comment p a {
+  text-overflow: ellipsis;
+  /* width:800px; */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header {
+  background-color: #595960;
+  padding: 10px 100px;
+  max-width: 100%;
+  min-width: 1000px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+}
+
+.header-items {
+  float: right;
+  /* margin-right:200px; */
+}
+
+.header-items a {
+  float: left;
+  /* margin:40px 10px; */
+  padding: 0 10px;
+  color: white;
+  line-height: 50px;
+  /* height:100 px; */
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+/*# sourceMappingURL=top.css.map */

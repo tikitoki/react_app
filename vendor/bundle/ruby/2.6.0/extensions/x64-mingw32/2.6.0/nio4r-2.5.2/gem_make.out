@@ -1,0 +1,14 @@
+current directory: C:/Users/Administrator/react_app/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.2/ext/nio4r
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20200707-10748-14ohumi.rb extconf.rb
+
+current directory: C:/Users/Administrator/react_app/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.2/ext/nio4r
+make "DESTDIR=" clean
+make: *** 没有规则可制作目标“clean”。 停止。
+
+current directory: C:/Users/Administrator/react_app/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.2/ext/nio4r
+make "DESTDIR="
+make: 对“all”无需做任何事。
+
+current directory: C:/Users/Administrator/react_app/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.2/ext/nio4r
+make "DESTDIR=" install
+make: 对“install”无需做任何事。

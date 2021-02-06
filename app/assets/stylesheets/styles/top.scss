@@ -1,0 +1,137 @@
+// Place all the styles related to the top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e0e0e0;
+}
+.main{
+    width:1600px;
+    margin:50px auto;
+    background-color: #f0f8fa;
+}
+
+.shop_detail img{
+    height:100px;
+    width:100px;
+}
+
+.main-container{
+    background-image: url("/../images/restaurant1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:100px;
+    padding-right:200px;
+    padding-left:200px;
+}
+
+
+.shop_detail{
+    display:flex;
+}
+
+.shop_detail img{
+    margin:auto;
+    height:130px;
+    width:130px;
+}
+
+.shops{
+    display:flex;
+}
+
+.li{
+    display:flex;
+}
+
+.aa{
+    
+    height:100px;
+    width:100px;
+}
+
+
+/* .btn1{
+    display:flex;
+    float:right;
+    margin:0 0 0 auto;
+} */
+
+.comment{
+    width:800px;
+}
+
+.comment p a{
+    text-overflow: ellipsis;
+    /* width:800px; */
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.header{
+    background-color:#595960;
+    padding:10px 100px;
+    max-width:100%;
+    min-width: 1000px;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+
+.header-container{
+    position:fixed;
+    width:100%;
+}
+
+.header-items{
+    float:right;
+    /* margin-right:200px; */
+}
+
+
+.header-items a{
+    float:left;
+    /* margin:40px 10px; */
+    padding:0 10px;
+    color:white;
+    line-height:50px;
+    /* height:100 px; */
+    display:block;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+.nav{
+    justify-content: space-around;
+}
+
+.route-page{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:10vh;
+    background-color: skyblue;
+    height: 300px;
+}
+
+.nav-item-enter{
+    opacity: 0;
+    right:100vw;
+}
+
+.nav-item-enter-active{
+    opacity: 1;
+    right:0vw;
+    transition: all 300ms ease-in-out 200ms;
+}
+
+.nav-item-exit{
+    opacity: 1;
+}
+
+.nav-item-exit-active{
+    left: 100vw;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
