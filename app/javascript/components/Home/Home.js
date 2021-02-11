@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="image javascript" style={style.javascript}></div>
                 <div className="image ps" style={style.ps}></div>
                 <div className="image ruby" style={style.ruby}></div>
-                <img className="image top-subject" src="/images/full-stack-web-developer-subject.png"></img>
+                <img className="image top-subject" src="/images/Full-Stack-Web-Developer-subject.png"></img>
                 {/* <img className="image top-text" src="/images\Full-Stack-Web-Developer-text.png"></img> */}
             </div>
             <div className="top-text">
