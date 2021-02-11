@@ -19,8 +19,8 @@ const ReactHook = () => {
 
 
     return (
-        <div>
-            <h1>Home Page</h1>
+        <div className="route-page">
+            <h1>Using useStateHook</h1>
             <p>{count}</p>
             <IncreaseButton/>
         </div>);

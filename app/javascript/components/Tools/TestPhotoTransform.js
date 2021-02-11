@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 const Div = styled.div`
     background-color:#333333;
-    position:relative;
-    height:400px;
 `;
 
 const Image1 = styled.img`
@@ -38,7 +36,7 @@ class TestPhotoTransform extends React.Component {
 
     render() {
         return (
-            <Div className="photo-transform-container">
+            <Div className="photo-transform-container route-page">
                 <Image1 className="photo-transform img1" 
                 src="https://static.biligame.com/deadcells/gw/pc/images/right-nav/nav-news.png?4d900a6d" 
                 style={this.state.img_style[0]}/>

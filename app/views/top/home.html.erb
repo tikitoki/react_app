@@ -1,6 +1,10 @@
-  <div class="header-container">
-    <%= react_component("Home/App")%>
-  </div>
+  <% content_for :for_head do %>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet">
+  <% end %>
+  <%# <div class="header-container"> %>
+    <!--<%= react_component("Home/App")%>-->
+    <%= react_component("Global/GlobalNav")%>
+  <%# </div> %>
   <!-- <div class="main-container" >
     
     <i class="c-rating__star" id="test1"></i>
