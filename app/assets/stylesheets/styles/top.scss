@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #e0e0e0;
+    background-color: #fff;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 li {
@@ -112,10 +115,18 @@ li {
     position: absolute;
     left: 0;
     right: 0;
-    margin-left: 256px;
+    padding-left: 256px;
     background-color: skyblue;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
 }
+
+// @media screen and (max-width: 900px) {
+//     .route-page {
+//         padding-left: 0px;
+//         width:100%;
+//     }
+// }
 
 .nav-item-enter {
     opacity: 0;
@@ -193,57 +204,55 @@ li {
     margin: auto;
     position: relative;
     height: 550px;
-    .image{
+    .image {
         position: absolute;
-    // top:0;
-    // left:0;
+        // top:0;
+        // left:0;
     }
-    .reactjs{
+    .reactjs {
         animation: top-visual-reactjs 0.3s 0s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    .css{
+    .css {
         animation: top-visual-css 0.3s 0.1s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    .html{
+    .html {
         animation: top-visual-html 0.3s 0.2s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    .mysql{
+    .mysql {
         animation: top-visual-mysql 0.3s 0.3s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    .javascript{
+    .javascript {
         animation: top-visual-javascript 0.3s 0.4s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    .ps{
+    .ps {
         animation: top-visual-ps 0.3s 0.5s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    .ruby{
+    .ruby {
         animation: top-visual-ruby 0.3s 0.6s linear forwards;
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    
 }
 
-
-@keyframes top-visual-reactjs{
+@keyframes top-visual-reactjs {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(400px, 200px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -251,13 +260,13 @@ li {
     }
 }
 
-@keyframes top-visual-css{
+@keyframes top-visual-css {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(0px, 200px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -265,13 +274,13 @@ li {
     }
 }
 
-@keyframes top-visual-html{
+@keyframes top-visual-html {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(-400px, 200px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -279,13 +288,13 @@ li {
     }
 }
 
-@keyframes top-visual-mysql{
+@keyframes top-visual-mysql {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(400px, 0px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -293,13 +302,13 @@ li {
     }
 }
 
-@keyframes top-visual-javascript{
+@keyframes top-visual-javascript {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(-400px, 0px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -307,13 +316,13 @@ li {
     }
 }
 
-@keyframes top-visual-ps{
+@keyframes top-visual-ps {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(400px, -200px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -321,13 +330,13 @@ li {
     }
 }
 
-@keyframes top-visual-ruby{
+@keyframes top-visual-ruby {
     0% {
         -webkit-transform: translate(400px, 200px);
         transform: translate(-400px, -200px);
         opacity: 0;
     }
-    
+
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -335,24 +344,71 @@ li {
     }
 }
 
-.top-text{
+.top-text {
     width: 900px;
-    margin:auto;
+    margin: auto;
     text-align: center;
-    animation:fade-in 0.3s 1s linear forwards;
+    animation: fade-in 0.3s 1s linear forwards;
     opacity: 0;
-    p{
+    p {
         font-size: 71px;
         font-weight: bold;
     }
 }
 
-@keyframes fade-in{
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
-    
+
     100% {
         opacity: 1;
+    }
+}
+
+.nav-project {
+    position: absolute;
+    bottom: 15rem;
+    right: 2rem;
+    p {
+        color: inherit;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    a {
+        width: 6rem;
+        height: 6rem;
+        display: block;
+    }
+    .citrus {
+        background-image: url("/images/citrus_icon.png");
+        background-size: 100% 100%;
+    }
+}
+
+//bootstrap改写
+.row {
+    margin-right: 0;
+    --bs-gutter-x: 0;
+}
+
+.col-sm-6 {
+    padding: 0;
+}
+
+.y-input {
+    .animate__shakeX {
+        animation-duration: 0.5s;
+    }
+}
+
+.chart-type-container {
+    margin-top: 30px;
+        .chart-type-btn {
+        margin-bottom: 10px;
+        width: 100%;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

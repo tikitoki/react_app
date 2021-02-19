@@ -56,6 +56,9 @@ class App extends React.Component {
 const Home = () => {
     // const [count,setCount]=useState(0);
     // setCount(prevCount=>prevCount+1);
+    setTimeout(() => {
+        
+    }, timeout);
     return (
         <div className="route-page">
             <h1>Home Page</h1>

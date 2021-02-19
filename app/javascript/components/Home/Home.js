@@ -16,8 +16,11 @@ const Home = () => {
                 {/* <img className="image top-text" src="/images\Full-Stack-Web-Developer-text.png"></img> */}
             </div>
             <div className="top-text">
-                <p>DESIGN CODING</p>
-                <p>&CREATE</p>
+                <p>DESIGN,CODING<br></br>&CREATE</p>
+            </div>
+            <div className="nav-project">
+                <p>我的项目</p>
+                <a target="_blank" className="citrus" href="/pages/citrus"></a>
             </div>
         </div>
     );

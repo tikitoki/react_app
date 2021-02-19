@@ -1,27 +1,27 @@
 /* // Place all the styles related to the index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/ */
+.test {
+    .container {
+        height: 30%;
+        width: 30vw;
+        background-color: azure;
+        .inner {
+            background-color: rgb(13, 93, 221);
+            padding: 1em;
+            border-radius: 10px;
+            width: 100%;
+            clip-path: circle(20% at 0 0);
+            transition: clip-path 0.5s ease-in-out;
+            color: white;
+        }
 
-.container{
-    height: 30%;
-    width: 30vw;
-    background-color: azure;
-    .inner{
-        background-color: rgb(13, 93, 221);
-        padding: 1em;
-        border-radius: 10px;
-        width: 100%;
-        clip-path: circle(20% at 0 0);
-        transition: clip-path 0.5s ease-in-out;
-        color: white;
+        &:hover .inner {
+            clip-path: circle(150%);
+        }
     }
 
-
-    &:hover .inner{
-        clip-path: circle(150%);
+    canvas {
+        border: 1px solid black;
     }
-}
-
-canvas{
-    border:1px solid black;
 }

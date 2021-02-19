@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'index/test'
   # get 'tools/bpm_test'
   get 'user/index'
+
+  get 'pages/citrus'
   
   #direct every route dont match any routes in this file to top#home
   get '*page' , to: 'top#home' ,constraints: ->(req) do
