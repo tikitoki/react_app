@@ -9,7 +9,11 @@
     width: 100%;
     background : #fff url('/images1/preloader.gif') no-repeat center;
     z-index : 1001;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
+}
+
+.loaded #loader{
+    opacity: 0;
 }
 /* PRELOADER ENDS HERE */
 /* Fixed Starts Here CSS */
@@ -96,7 +100,7 @@ a.navbar-brand {
     letter-spacing: 0.1rem;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    z-index: 10000;
+    z-index: 1000;
     width: 100vw;
     position: fixed;
     transition: top 0.3s; 

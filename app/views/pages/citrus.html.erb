@@ -2,25 +2,28 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script src="/javascript/lazysizes.min.js" async=""></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <link rel="icon" href="/images1/citrus_icon.png" type="image/icon">
   <%# <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> %>
   <%# <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script> %>
   <style>
   body{
     overflow-x: hidden;
+    scrollbar-width:none;
 }
 ::-webkit-scrollbar {
     display: none;
 }
   </style>
 <% end %>
-<body data-spy="scroll" data-target="#navbarResponsive" onload="preloader()" data-aos-easing="ease"
+<body
+data-spy="scroll" data-target="#navbarResponsive" data-aos-easing="ease"
     data-aos-duration="400" data-aos-delay="0">
     <!-- Preloader Starts Here -->
-    <div id="loader" style="display : none">
+    <div id="loader">
     </div>
     <!-- Preloader Starts Here -->
     <!-- Home Section Starts Here -->
-    <div id="home" class="offset aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000"
+    <div    id="home" class="offset aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000"
         data-aos-easing="ease-in-out" data-aos-delay="0">
         <!-- Navbar Starts Here -->
         <nav class="navbar navbar-expand-md navbar-light" style="top : 0">
@@ -270,10 +273,9 @@
         AOS.init();
     </script>
     <script>
-        function preloader() {
-            document.getElementById("loader").setAttribute("style", "opacity : 0");
-            setTimeout(function () { document.getElementById("loader").setAttribute("style", "display : none") }, 5000)
-        }
+        $( document ).ready(function(){
+            setTimeout(function () { $("body").addClass("loaded"); }, 2000);
+        }) 
         function scrollDiv() {
             document.getElementById("horizontal").scrollBy({
                 left: 600,
