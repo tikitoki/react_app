@@ -27,7 +27,7 @@ data-spy="scroll" data-target="#navbarResponsive" data-aos-easing="ease"
         data-aos-easing="ease-in-out" data-aos-delay="0">
         <!-- Navbar Starts Here -->
         <nav class="navbar navbar-expand-md navbar-light" style="top : 0">
-            <a href="#" class="navbar-brand"><img src="/images1/citrus_icon.png" alt="..." class="lozad"></a>
+            <a href="#" data-turbolinks="false" class="navbar-brand"><img src="/images1/citrus_icon.png" alt="..." class="lozad"></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,22 @@ data-spy="scroll" data-target="#navbarResponsive" data-aos-easing="ease"
             <div class="navbar-collapse collapse" id="navbarResponsive" style="">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">主页</a>
+                        <a data-turbolinks="false" href="#home" class="nav-link">主页</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#ourproducts" class="nav-link">产品一览</a>
+                        <a data-turbolinks="false" href="#ourproducts" class="nav-link">产品一览</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#Images" class="nav-link">柑橘美图</a>
+                        <a data-turbolinks="false" href="#Images" class="nav-link">柑橘美图</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#articles" class="nav-link">你知道吗</a>
+                        <a data-turbolinks="false" href="#articles" class="nav-link">你知道吗</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#location" class="nav-link">地址</a>
+                        <a data-turbolinks="false" href="#location" class="nav-link">地址</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contactus" class="nav-link">联系我们</a>
+                        <a data-turbolinks="false" href="#contactus" class="nav-link">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@ data-spy="scroll" data-target="#navbarResponsive" data-aos-easing="ease"
         <div class="caption ">
             <h1>欢迎来到<br>
                 柑橘之家</h1>
-            <a href="#" class="btn btn-lg">立刻购买</a>
+            <a data-turbolinks="false" href="#" class="btn btn-lg">立刻购买</a>
         </div>
         <!-- End Landing Page Section  -->
     </div>
@@ -272,17 +272,39 @@ data-spy="scroll" data-target="#navbarResponsive" data-aos-easing="ease"
         AOS.init();
     </script>
     <script>
-        $( document ).ready(function(){
-            setTimeout(function () { 
+        // $( document ).ready(function(){
+        //     setTimeout(function () { 
                 
-                $("body").addClass("loaded"); 
-            }, 3000);
+        //         $("body").addClass("loaded"); 
+        //     }, 0);
             
-            setTimeout(function () { 
+        //     setTimeout(function () { 
+                
+        //         $("#loader").css("display","none");
+        //     }, 1000);
+        // }) 
+        window.onload=()=>{
+            $('#loader').addClass('loaded');
+            setTimeout(function () {
                 
                 $("#loader").css("display","none");
-            }, 4000);
-        }) 
+            }, 1000)
+        };
+        // function preloader(){
+        //     $('#loader').addClass('loaded');
+        //     setTimeout(function () {
+                
+        //         $("#loader").css("display","none");
+        //     }, 1000)
+        // }
+        
+        // window.addEventListener('load',()=>{
+        //     $('#loader').addClass('loaded');
+        //     setTimeout(function () {
+                
+        //         $("#loader").css("display","none");
+        //     }, 1000)
+        // });
         function scrollDiv() {
             document.getElementById("horizontal").scrollBy({
                 left: 600,
