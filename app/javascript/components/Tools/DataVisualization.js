@@ -127,7 +127,7 @@ export default class DataVisualization extends React.Component {
                 <p>横轴</p>
                     {this.state.xlabels.map((xlabel, index) => (
                         <div>
-                            <InputForm maxLength={12} showWarning={false} value={xlabel} onChangeFunction={(e) => this.handelChangex(index, e)} />
+                            <InputForm key={index} maxLength={12} showWarning={false} value={xlabel} onChangeFunction={(e) => this.handelChangex(index, e)} />
                         </div>
 
                     ))}
@@ -136,7 +136,7 @@ export default class DataVisualization extends React.Component {
                 <p>纵轴</p>
                     {this.state.ydatas.map((ydata, index) => (
                         // <input form="text" value={ydata} onChange={(e) => this.handelChangey(index, e)}></input>
-                        <InputForm maxLength={12} showWarning={this.state.ifShowWarning[index]} value={ydata} onChangeFunction={(e) => this.handelChangey(index, e)} />
+                        <InputForm key={index+this.state.xlabels.length} maxLength={12} showWarning={this.state.ifShowWarning[index]} value={ydata} onChangeFunction={(e) => this.handelChangey(index, e)} />
                     ))}
                 </div>
                 <div className="row">

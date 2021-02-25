@@ -15,7 +15,7 @@ export default class InputForm extends Component {
             return (
                 <div>
                     <P className="animate__animated animate__shakeX">无效的值</P>
-                    <input maxlength={this.props.maxLength} form="text" value={this.props.value} onChange={this.props.onChangeFunction}></input>
+                    <input maxLength={this.props.maxLength} form="text" value={this.props.value} onChange={this.props.onChangeFunction}></input>
                 </div>
             )
         }
@@ -23,7 +23,7 @@ export default class InputForm extends Component {
             return (
                 <div>
                     <P style={{opacity:0}}>无效的值</P>
-                    <input maxlength={this.props.maxLength} form="text" value={this.props.value} onChange={this.props.onChangeFunction}></input>
+                    <input maxLength={this.props.maxLength} form="text" value={this.props.value} onChange={this.props.onChangeFunction}></input>
                 </div>
             )
         }
